@@ -34,12 +34,17 @@ This is my first React Application.
 
 ### Key Features <a name="key-features"></a>
 
-- **[]**
+- **[Single Page Application]**
+- **[Easy code structure to undrestand]**
+- **[good folder Structure]**
+- **[Used eslint and stylelint]**
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 🚀 NA <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](N/A)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
@@ -52,14 +57,16 @@ In order to run this project you need:
 
 - install Vscode.
 - Install Chrome or any browser.
+- Install Node.js
+
 
 ### Usage
 
 To run the project, execute the following command:
 
 - Clone the repository or download the zip file.
-- extract the zip file and open the index file in a browser.
-- open the cloned file with Vscode
+- extract the zip file and open the Project in vsCode.
+- open terminal and run "npm strat"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +89,10 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[]**
+- [ ] **[Handle event in a react app]**
+- [ ] **[Use React life cycle method]**
+- [ ] **[Connect to an API within a functional component]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
