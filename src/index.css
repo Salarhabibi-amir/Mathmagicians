@@ -25,3 +25,43 @@ code {
     'Courier New',
     monospace;
 }
+
+.calc-containner {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  margin: 100px auto;
+  border: 1px solid black;
+}
+
+.inputfield {
+  width: 425px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+  text-align: end;
+}
+
+.calc-btn-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.btn-number {
+  background-color: lightgray;
+}
+
+.btn-sign {
+  background-color: hsl(16, 73%, 57%);
+}
+
+.btn-zero {
+  grid-column: 1/3;
+}
