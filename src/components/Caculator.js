@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
-// eslint-disable-next-line react/prop-types
 const MyInput = ({ value }) => (
   <input type="text" className="inputfield" value={value} readOnly />
 );
 
-// eslint-disable-next-line react/prop-types
+MyInput.propTypes = {
+  value: PropTypes.string.isRequired,
+};
+
 const MyBtn = ({ onClick }) => (
   <div className="calc-btn-grid ">
     <button type="button" className="btn btn-number" onClick={() => onClick('AC')}>
@@ -68,6 +71,10 @@ const MyBtn = ({ onClick }) => (
     </button>
   </div>
 );
+
+MyBtn.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 const Calculator = () => {
   const [state, setState] = useState({
