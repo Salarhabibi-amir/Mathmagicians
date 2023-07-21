@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
-const MyInput = ({ value }) => (
-  <input type="text" className="inputfield" value={value} readOnly />
-);
+const MyInput = ({ value }) => (<input type="text" className="inputfield" value={value} readOnly />);
 
 MyInput.propTypes = {
   value: PropTypes.string.isRequired,
@@ -60,7 +58,11 @@ const MyBtn = ({ onClick }) => (
     <button type="button" className="btn btn-sign" onClick={() => onClick('+')}>
       +
     </button>
-    <button type="button" className="btn btn-number btn-zero" onClick={() => onClick('0')}>
+    <button
+      type="button"
+      className="btn btn-number btn-zero"
+      onClick={() => onClick('0')}
+    >
       0
     </button>
     <button type="button" className="btn btn-number" onClick={() => onClick('.')}>
@@ -77,11 +79,8 @@ MyBtn.propTypes = {
 };
 
 const Calculator = () => {
-  const [state, setState] = useState({
-    total: null,
-    next: null,
-    operation: null,
-  });
+  const [state,
+    setState] = useState({ total: null, next: null, operation: null });
 
   const handleClick = (buttonName) => {
     const newState = calculate(state, buttonName);
